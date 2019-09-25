@@ -4,10 +4,14 @@ public class Student {
     private int marks;
     private static int totalPass;
     private static int totalFail;
-    
-    
-    public static void showAvg(Student tmp1, Student tmp2){
-        System.out.println("Avg of 2 : "+(tmp1.marks+tmp2.marks)/2);
+   
+    public static void showAvg(Student...v){
+        int n=v.length;
+        int total=0;
+        for(int i=0; i<n; i++){
+            total=total+v[i].marks;
+        }
+        System.out.println("Avg of : "+n+" Is : "+(total/n));
     }
     
     public static void showGrade(Student tmp){

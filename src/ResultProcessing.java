@@ -14,9 +14,9 @@ public class ResultProcessing {
         s2.showResult();
         s3.showResult();
         s4.showResult();
-
         Student.showAvg(s1, s2);
-        Student.showAvg(s2, s3);
+        Student.showAvg(s1, s2, s3);
+        Student.showAvg(s1, s2, s3, s4);
 
         //s3.showAvg(s2);
         //Student.showOverallResult();
