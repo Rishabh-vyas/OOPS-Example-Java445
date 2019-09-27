@@ -51,4 +51,6 @@ public class Demo {
        (initialization during object creation itself)
     11)a constructor will be called once only on an object
        where as methods can be called n times.
+    12) you can call one constructor from another one using
+       this keyword.
 */
