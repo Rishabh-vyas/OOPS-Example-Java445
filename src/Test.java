@@ -5,6 +5,15 @@ public class Test {
     public Test(int a, int b){x=a;y=b;}
     public void show(){System.out.println(x+","+y);}
     
+    public boolean equals(Test tmp){
+        if(x==tmp.x && y==tmp.y)
+            return true;
+        else
+            return false;
+    }
+    
+    
+    
     public static void main(String[] args) {
         Test t1;
         new Test(10,20);
